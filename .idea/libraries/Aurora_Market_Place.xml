@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Aurora_Market_Place">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Aurora_Market_Place.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

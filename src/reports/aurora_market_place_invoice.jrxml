@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="shop_grn" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6784a23-8630-4b55-9663-d20a09979cad">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="user_name" class="java.lang.String"/>
+	<parameter name="user_contact_number" class="java.lang.String"/>
+	<parameter name="invoice_id" class="java.lang.String"/>
+	<parameter name="invoice_date" class="java.lang.String"/>
+	<parameter name="cashier" class="java.lang.String"/>
+	<parameter name="payment" class="java.lang.String"/>
+	<parameter name="balance" class="java.lang.String"/>
+	<parameter name="grand_total" class="java.lang.String"/>
+	<parameter name="payment_type" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<field name="COLUMN_7" class="java.lang.String"/>
+	<field name="COLUMN_8" class="java.lang.String"/>
+	<field name="COLUMN_9" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="300" splitType="Stretch">
+			<staticText>
+				<reportElement x="271" y="30" width="260" height="30" uuid="83f9623e-e0bd-4756-8e1d-d3bfc20013e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="21" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AURORA MARKET PLACE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="60" width="260" height="20" uuid="0a5d31da-5c64-4367-983d-e2899c57ba82"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[No.1/10 Lotus Road, Highlevel Area,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="80" width="260" height="20" uuid="700eefc1-ff46-41c7-b30f-1afe590ab2a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[Colombo 7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="100" width="260" height="20" uuid="1234fc1b-824c-4451-b855-63c4fa2517a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[Tel : 011 2445455 / 076 1821354]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="120" width="260" height="20" uuid="2ef4ec40-03c3-4573-8626-4a12ad98f423"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[Fax : 011 2445455]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="150" width="802" height="30" forecolor="#FFFFFF" backcolor="#79CB60" uuid="6d2c350e-18ea-4e68-b999-2e0d712abb91"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INVOICE]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="720" y="120" width="82" height="20" forecolor="#999999" uuid="bad11f5f-5b86-4bac-862e-c39cab4ff74a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="20" backcolor="#79CB60" uuid="28a14ef9-caf6-4646-9c87-0c84dff2453b"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="40" y="30" width="200" height="110" uuid="21226a3c-a823-48af-856c-2d442c8a38db"/>
+				<imageExpression><![CDATA["D:/PCJT/Practicals/04.Software Application Development/Aurora_Market_Place/src/imgs/logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="680" y="120" width="40" height="20" forecolor="#999999" uuid="9fc694c8-cdee-4902-a5ff-62887f8e5415"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="190" width="802" height="20" uuid="a16a0f89-c87f-4581-86d8-f639fc2141e5"/>
+				<graphicElement>
+					<pen lineColor="#B5B5B5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="190" width="370" height="20" uuid="459a85d7-d826-4aca-8c84-2c29957913bf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Details :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="190" width="340" height="20" uuid="93e638ac-5151-4138-8ead-43cd89dc28a5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Invoice Details :]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="210" width="400" height="79" uuid="ea384bcb-77ea-481c-8781-e9c3bb2221a4"/>
+				<graphicElement>
+					<pen lineColor="#B5B5B5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="220" width="70" height="20" uuid="f6a92472-fd0a-4b49-aeb9-34d6bd87975d"/>
+				<textElement>
+					<font fontName="Ebrima" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[To,]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="400" y="210" width="402" height="79" uuid="5df3f95d-4bf7-4704-9522-149804f1bacc"/>
+				<graphicElement>
+					<pen lineColor="#B5B5B5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="410" y="220" width="90" height="20" uuid="50fe227c-9235-40f0-8233-c54f92244652"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Invoice ID      :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="240" width="90" height="20" uuid="8b889a80-ed79-466e-9862-efe34b7b815d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Invoice Date  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="260" width="90" height="20" uuid="d8a25f75-e4a2-4ff0-b802-0120a7f6edba"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cashier           :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="220" width="80" height="20" uuid="243d8042-5009-45b7-a6b3-a1a77783f8f8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name          :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="239" width="80" height="20" uuid="b7035960-991c-4215-bf95-d51dba6ef2e9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact No :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="220" width="200" height="20" uuid="6ac8550f-7099-4bbd-a3d6-4c183a9ee1dd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{user_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="240" width="200" height="19" uuid="cd1b3b98-e847-490c-b74b-d497b55f39f1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{user_contact_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="220" width="290" height="19" uuid="09221b22-a9b1-4fec-9fc8-c6bfca17f06a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{invoice_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="240" width="290" height="19" uuid="7932237d-84ec-4c0a-bc70-8a312d66429c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{invoice_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="259" width="290" height="21" uuid="b9098ab6-05ee-4edf-b3c0-8f23997e9af0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cashier}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="802" height="31" backcolor="#030303" uuid="a3760d02-6877-4c35-ab1a-bd3c74d5f0a9"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="40" y="0" width="80" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="72610d96-455c-436e-9b38-d55fe0d3a96b"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="40" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="a781fefc-e4ae-460a-8649-37367878202b"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="120" y="0" width="80" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="5175e621-6ddf-4f28-925f-f11478ea7ecc"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Brand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="200" y="0" width="240" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="7d6f9a87-61e1-4b19-8510-f879749111d7"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="440" y="0" width="40" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="7f616d53-e5aa-4210-8077-ae9a0d01f7a4"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="7c21e16a-f623-47fe-be47-5df8f91321fa"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Selling Price (Rs)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="580" y="0" width="60" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="b5838f27-979b-4abf-92ee-27a99a304cc6"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MFD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="700" y="0" width="102" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="e18589c3-3d68-4d17-bb1e-e5e4c042b5d4"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total (Rs)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="640" y="0" width="60" height="30" forecolor="#FFFFFF" backcolor="#454545" uuid="09171f85-deb2-4cd2-92e1-e03eaf8103f4"/>
+				<box>
+					<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXD]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="0" width="41" height="20" uuid="006d3560-dc11-449d-a466-52a2327e2f47">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2259666c-82b9-4571-ba80-d9135c6a11a1"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="41" y="0" width="80" height="20" uuid="267528f4-bfef-418a-aec5-a883a3dcb0e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ef5e0fc-e700-409d-ac2f-ce68eaacf909"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="121" y="0" width="79" height="20" uuid="28dd72cd-bbb2-4943-b820-ebe5de227640">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5127f8a0-f519-420f-a0f2-f19f5b73041e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="0" width="240" height="20" uuid="5b3a5573-489a-461a-9d90-2f68a07b7298">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7396d41b-d407-4671-a5a2-f09e30a4ee82"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="440" y="0" width="40" height="20" uuid="56acbaa5-54f5-475b-ab3a-cc878fd26e5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e6c69053-864c-4039-85e7-026c94754a41"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="480" y="0" width="100" height="20" uuid="3437b9c1-d5ba-495d-9de1-313ebafd939b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="605f4523-4b98-42a8-9519-de02f991aef5"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="580" y="0" width="60" height="20" uuid="497f5db1-d99d-4faf-809b-d59d4c860e6c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d728f726-4798-4572-a5e8-8e8d448b9a86"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_7}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="640" y="0" width="60" height="20" uuid="6998d1f0-5fb3-4807-b949-0d1f7efa8750">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="931713ec-f5dc-46f0-9548-5c11f37aabcd"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_8}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="700" y="0" width="102" height="20" uuid="e291559a-4dd2-472b-bfd5-cfbe50435318">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7b755b2-f568-4d31-b385-4a1574e4e5a3"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#B5B5B5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="6" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_9}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="43" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="22" uuid="0e78ae1b-6cf1-466b-beee-e17ca79f8e83"/>
+				<graphicElement>
+					<pen lineColor="#B5B5B5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="0" width="90" height="20" uuid="5d8309c4-6aa9-4b55-a55d-e6ec54692914"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment (Rs) : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="22" uuid="11e1106e-0227-425e-8529-2d75ee5d21b1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grand Total (Rs) :]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="22" width="802" height="21" uuid="a00e2269-e25a-4d49-9573-a8dbb3c53827"/>
+				<graphicElement>
+					<pen lineColor="#B5B5B5"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="630" y="23" width="100" height="18" forecolor="#858585" uuid="85531dae-f137-4b59-bcc1-0ada21d878db"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="h:mm a">
+				<reportElement x="730" y="23" width="60" height="18" forecolor="#858585" uuid="5fcf1e20-f814-4325-967d-5fbad27cf6ee"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="22" width="90" height="20" uuid="4ff1208a-377d-45ca-9cc0-74eab0bb69ca"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment By   : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="80" height="22" uuid="b747c08c-fb57-4766-9ae1-9344a03b2aab"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Balance (Rs) : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="22" uuid="92225cab-767f-4f75-9881-53aab34a0544"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="10"/>
+					<paragraph leftIndent="6" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{payment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="100" height="22" uuid="749dcbdc-13e6-4855-aaec-f202a4bba63b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="10"/>
+					<paragraph leftIndent="6" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{balance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="700" y="0" width="100" height="22" uuid="97165552-93ac-4204-83c2-317730eab33d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="10" isBold="true"/>
+					<paragraph leftIndent="6" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grand_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="22" width="240" height="21" uuid="75ab15f1-1b0e-49a4-a80a-51f0a899f445"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="10"/>
+					<paragraph leftIndent="6" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{payment_type}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="102" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="82" uuid="7ec3f9f5-b626-421d-acfa-8a6a4309ec00"/>
+				<graphicElement>
+					<pen lineColor="#B5B5B5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="680" y="60" width="121" height="22" uuid="e9d12542-d067-402b-8847-d2be3098bab0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="12"/>
+				</textElement>
+				<text><![CDATA[Cashier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="82" width="60" height="20" forecolor="#A19C9C" uuid="38c12ef5-44db-4c13-93cb-ee6a8fffe24b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page No :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="780" y="82" width="22" height="20" forecolor="#A19C9C" uuid="aaca5f66-b422-414a-a94e-438294daf750"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

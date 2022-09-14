@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="aurora_market_place_salary" pageWidth="400" pageHeight="800" columnWidth="360" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="18a42d38-c28b-4ac9-96c2-ccc6d780a6e6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="employee_id" class="java.lang.String"/>
+	<parameter name="employee_name" class="java.lang.String"/>
+	<parameter name="year" class="java.lang.String"/>
+	<parameter name="month" class="java.lang.String"/>
+	<parameter name="days_work" class="java.lang.String"/>
+	<parameter name="rate_of_pay" class="java.lang.String"/>
+	<parameter name="allowance" class="java.lang.String"/>
+	<parameter name="pfd" class="java.lang.String"/>
+	<parameter name="epf" class="java.lang.String"/>
+	<parameter name="fund_total" class="java.lang.String"/>
+	<parameter name="total_salary" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="etf" class="java.lang.String"/>
+	<parameter name="other_deductions" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="210" splitType="Stretch">
+			<image>
+				<reportElement x="120" y="30" width="120" height="60" uuid="ad181e98-57fe-4433-8b05-629b04c2e9d4"/>
+				<imageExpression><![CDATA["D:/PCJT/Practicals/04.Software Application Development/Aurora_Market_Place/src/imgs/logo.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="0" y="0" width="361" height="21" backcolor="#79CB60" uuid="ebdc9ad7-603a-40aa-993b-0fecd0e94e40"/>
+				<graphicElement>
+					<pen lineColor="rgba(0, 0, 0, 0.0)"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="100" width="360" height="30" uuid="53a45743-696a-4afd-8b22-3e3202f59d76"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="21" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AURORA MARKET PLACE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="360" height="20" uuid="3ea67006-3991-45c8-912d-990c64774eac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[No.1/10 Lotus Road, Highlevel Area,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="360" height="20" uuid="1c78dbb4-58b2-4a88-957a-ee760ef04c3e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[Colombo 7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="170" width="360" height="20" uuid="af649bd3-cdb3-49e3-8d0f-4553e29bb287"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[Tel : 011 2445455 / 076 1821354]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="360" height="20" uuid="361489d3-364c-4231-a018-d80d2e626b95"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="14"/>
+				</textElement>
+				<text><![CDATA[Fax : 011 2445455]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="290" y="30" width="70" height="20" forecolor="#999999" uuid="4f95c735-8863-4db6-90ac-8f9c37add5f5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="30" width="40" height="20" forecolor="#999999" uuid="2486192b-4c18-48c8-ac59-a423ad8ab772"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="10" width="360" height="30" forecolor="#FFFFFF" backcolor="#79CB60" uuid="b874e9cc-5f5b-44e5-b400-aeef36e14098"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAY SHEET]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<summary>
+		<band height="465" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="190" height="20" uuid="852e7873-21a5-4e78-9d7a-6e1504adae7d"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Employee No			]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="190" height="20" uuid="6a2beae1-5c97-4b82-b4a6-58b225bc5acd"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Employee Name		]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="190" height="20" uuid="b3799852-d81a-490c-bd04-82fa12112685"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="false"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Year				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="190" height="20" uuid="6be96c61-7187-4124-9bca-98fc3f230308"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="false"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Month				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="190" height="20" uuid="195aa2f5-1641-4705-ac90-5ddaa5901b05"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[No. of Days Work		]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="190" height="20" uuid="904562e7-7c75-46a8-968c-878037df436b"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Basic Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="170" width="190" height="20" uuid="c57cd4b2-c949-4297-b1f5-634f521805ae"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Allowance			]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="220" width="190" height="20" uuid="e9846491-cdf2-4fdc-9897-07ab5520cdcd"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Provident Fund Deducted (8%)	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="240" width="190" height="20" uuid="1b79c25e-e833-4cea-acb5-32277856c8ff"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="false"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[EPF Employer (12%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="260" width="190" height="20" uuid="c5382df6-bb0f-4124-bf2f-f7eaf6326cc6"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="false"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Provident Fund Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="350" width="190" height="20" uuid="550fb05f-cd49-4276-bd4c-031b96031fec"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Net Salary]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="30" width="170" height="20" uuid="238a7b03-6667-46ab-a99a-95b3e89c08ef"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{employee_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="50" width="170" height="20" uuid="97dac838-46c2-4b96-8860-3bac7139512b"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{employee_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="80" width="170" height="20" uuid="07fa7f38-aa04-48f1-940a-d102506e42ec"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="100" width="170" height="20" uuid="d8a48b57-1ea4-473b-9fa4-c5c0c1361bbb"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="120" width="170" height="20" uuid="16335c7e-3bc3-47fd-b197-3cef2f1f8cde"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{days_work}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="150" width="170" height="20" backcolor="#E6E6E6" uuid="56240a7e-836f-469f-b261-d78479917121"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rate_of_pay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="170" width="170" height="20" backcolor="#E6E6E6" uuid="7a6bb0e0-0f31-4270-9f3e-cc89ad662cd2"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{allowance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="220" width="170" height="20" backcolor="#E6E6E6" uuid="110fe54b-7ace-400e-be50-11cbcc3e227e"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pfd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="240" width="170" height="20" uuid="44416460-0dff-4c73-b2d6-e3ef5336db06"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{epf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="260" width="170" height="20" uuid="87754f35-045c-4469-a8e5-3189da3d4b66"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fund_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="350" width="170" height="20" backcolor="#E6E6E6" uuid="cd0040fc-2af8-4265-a416-88c486512b62"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total_salary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="430" width="110" height="20" uuid="99fc58f7-9c17-4d59-8d05-888e6247d28f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Account Manager]]></text>
+			</staticText>
+			<line>
+				<reportElement x="250" y="430" width="111" height="1" forecolor="#C9C9C9" uuid="6f52fa45-488a-42bd-b1ca-64fb92351649"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="190" width="190" height="20" uuid="6bcf5af5-cb40-4233-b7c3-22c3357ec4d9"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Total			]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="190" width="170" height="20" backcolor="#E6E6E6" uuid="d53d2462-334c-4579-b965-951c90f9b929"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="290" width="190" height="20" uuid="4362c02f-8675-4bf6-aed1-aea7e512e857"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="false"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[ETF (3%)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="290" width="170" height="20" uuid="fa421beb-2de5-49e9-85e5-befc943f839b"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{etf}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="320" width="190" height="20" uuid="4b51293a-fe9c-411b-aff7-c22c977d3154"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="10" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Salary, No pay & Other Deductions]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="320" width="170" height="20" backcolor="#E6E6E6" uuid="666ecb42-d319-43cd-92b9-696bfacc235c"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{other_deductions}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="10" width="190" height="20" uuid="ad2f3563-107f-4872-a07b-3f8ec9604705"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Employer No			]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="10" width="170" height="20" uuid="917b38c2-5498-4e32-a759-00a3e1d66ac3"/>
+				<box>
+					<pen lineColor="#9C9C9C"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#9C9C9C"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Ebrima" size="11" isBold="true"/>
+					<paragraph leftIndent="5" rightIndent="6"/>
+				</textElement>
+				<text><![CDATA[Y/22]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
